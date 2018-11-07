@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles2.css" type="text/css" media="all">
+    <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./js/scripts2.js" type="text/javascript"></script>
+    <title>Form Input Example Project: Online Restaurant Orders</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="testForm">
+        <div class="card bgSalmon">
+          <h3>Cheeseburgers</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many basic cheeseburgers you want.</label>
+                <input type="number" id="burgerPlainInput" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many double cheeseburgers you want.</label>
+                <input type="number" id="burgerDoubleInput" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many deluxe cheeseburgers you want.</label>
+                <input type="number" id="burgerDeluxeInput" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bgYellow">
+          <h3>Fries</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many orders of small fries you want.</label>
+                <input type="number" id="smlFryInput" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many orders of medium fries you want.</label>
+                <input type="number" id="medFryInput" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many orders of large fries you want.</label>
+                <input type="number" id="lrgFryInput" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bgBlue">
+          <h3>Drinks</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many soft drinks you want.</label>
+                <input type="number" id="softDrinkInput" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many milkshakes you want.</label>
+                <input type="number" id="milkshakeInput" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <label>Input how many juice drinks you want.</label>
+                <input type="number" id="juiceDrinksInput" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">
+          Place Order
+        </button>
+      </form>
+      <div class="results" id="mainReceipt">
+        <div id="orderSuccess">
+
+        </div>
+        <div class="row" id="receiptOutput">
+          <div class="col-md-4">
+            <ul id="foodOutput">
+            </ul>
+          </div>
+          <div class="col-md-2" id="costOutput">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-4" id="totalText">
+
+          </div>
+          <div class="col-md-2" id="receiptTotal">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
